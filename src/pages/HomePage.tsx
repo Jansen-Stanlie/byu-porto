@@ -72,14 +72,24 @@ const ClientsSection = () => (
       </div>
       <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-12 items-center">
         {CLIENTS_GRID_DATA.map((client) => (
-          <div key={client.name} className="flex justify-center items-center">
+          <figure
+            key={client.name}
+            className="group flex flex-col items-center justify-center gap-2"
+          >
             <img
               src={client.logoUrl}
               alt={client.name}
-              // The logos should be dark/black for best visibility on a light background.
-              className="max-h-12 w-auto object-contain transition-all duration-300 opacity-60 hover:opacity-100"
+              className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain transition-all duration-300 opacity-70 group-hover:opacity-100 group-hover:scale-[1.02]"
             />
-          </div>
+            <figcaption className="font-display font-semibold text-[13px] sm:text-sm tracking-wide text-dark-300/90 text-center transition-all group-hover:text-ink">
+              {client.name}
+            </figcaption>
+            {/* garis aksen brand saat hover */}
+            <span
+              aria-hidden
+              className="block h-0.5 w-6 bg-brand/60 rounded-full opacity-0 group-hover:opacity-100 group-hover:w-8 transition-all"
+            />
+          </figure>
         ))}
       </div>
     </div>

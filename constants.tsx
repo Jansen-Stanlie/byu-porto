@@ -103,7 +103,12 @@ export const TEAM_DATA: TeamMember[] = [
     imageUrl: "https://picsum.photos/seed/david/400/400",
   },
   {
-    name: "Stanley Jansen",
+    name: "Muhammad Fauzi",
+    role: "Chief Operating Officer",
+    imageUrl: "https://picsum.photos/seed/ridwan/400/400",
+  },
+  {
+    name: "Jansen Stanlie",
     role: "Head of IT",
     imageUrl: "https://picsum.photos/seed/stanley/400/400",
   },
@@ -147,83 +152,43 @@ export const CASE_STUDIES_DATA: CaseStudy[] = [
 // The paths below are placeholders. Please replace them with your actual logo files.
 export const CLIENTS_GRID_DATA: Client[] = [
   {
-    name: "polynia",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/2V4f5d37g6219Vz3eEMf4a/f9af4125b341f22143540e11855653b4/polynia.svg",
+    name: "Tiket.com",
+    logoUrl: "/src/asset/clients/tiket_com.png",
   },
   {
-    name: "Eileen Grace",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/1gCdwUE6dY5V12bvs2n0aI/760e5684ff401d4182465e9d21b0660a/eileen-grace.svg",
+    name: "Pantai Kelapa",
+    logoUrl: "/src/asset/clients/Pantai_Kelapa.png",
   },
   {
-    name: "mamaway",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/2tJub62ns2xxFw6e30Vzkg/f562df359c5d57b2781b4f4f10712d77/mamaway.svg",
+    name: "Pemkab Tuban",
+    logoUrl: "/src/asset/clients/Pemkab_Tuban.png",
   },
   {
-    name: "Mirae",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/3BTRwwb0Ew5iCXTsB35TPE/d1519a0a0375a0c029f6b761a2f64319/mirae.svg",
+    name: "Begawan Apartment",
+    logoUrl: "/src/asset/clients/Begawan_Apart.png",
   },
   {
-    name: "Chess",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/2g5hMgx42ER5vPb2CCJ55p/23a078e87483645b20468e7456722e03/chess.svg",
+    name: "Seafood Pantai Kelapa",
+    logoUrl: "/src/asset/clients/SeafoodPantaiKelapa.png",
   },
   {
-    name: "SH-RD",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/3t71sQWhs3t2oY42p3oW0A/5cae1a9e701962319c52220b240e4f3c/sh-rd.svg",
+    name: "Lazizaa",
+    logoUrl: "/src/asset/clients/Lazizaa.png",
   },
   {
-    name: "evoke",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/3Q8U0l1a34G0i345G2w3rI/a049d1073111bd290f6b4b45d27b9c9f/evoke.svg",
+    name: "Gunung Tetap Abadi",
+    logoUrl: "/src/asset/clients/Gunung_Tetap_Abadi.png",
   },
   {
-    name: "VHA Laboratories",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/6eX2z4xYnDFls5T9oKQxWc/58e23924f2f0a6d892a0e41712a4c9c1/vha.svg",
+    name: "Bank Jatim Syariah",
+    logoUrl: "/src/asset/clients/Bank_Jatim.png",
   },
   {
-    name: "Pastnine",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/2p2m09aN4bJzWk46s0sE6k/d73d9d30560a5839446d5102a0a256f6/pastnine.svg",
+    name: "Traveloka",
+    logoUrl: "/src/asset/clients/traveloka.png",
   },
   {
-    name: "Nutri Beyond",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/1fUjDABpGz0pL0YVjKQLzO/7b707010470519965b53d162f2f305f2/nutri-beyond.svg",
-  },
-  {
-    name: "mosseru",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/6D3d8nJc0u0hQ2y59j74P1/2d5e2e8e2b8b4c05291d9263435e0545/mosseru.svg",
-  },
-  {
-    name: "Ivy & Lily",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/5GvAdYJ2Tjv6LNW4mC9vHY/1c1815594b29319f074411f5e82f767a/ivy-lily.svg",
-  },
-  {
-    name: "DR.JOU",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/4a98G1o2ZYw0Rofv6vIS68/5e6834571946892f3cb0255b71af31a9/dr-jou.svg",
-  },
-  {
-    name: "MyDAISY",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/LZsVmMvCHG6KsvSju618B/a3b1c1c726354898b8c5e93344600109/mydaisy.svg",
-  },
-  {
-    name: "G-Belle Beauty",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/2z7Z2Y4t7t2p8S3l4y2y0X/14352f2d9396d19488e08d675661f435/g-belle.svg",
-  },
-  {
-    name: "Cleviant",
-    logoUrl:
-      "https://images.ctfassets.net/5de0220ick7d/4u8q0g1F2w8e7s6e3S0s8i/a953b584a206cb30b659c44d4715de3f/cleviant.svg",
+    name: "Barillah",
+    logoUrl: "/src/asset/clients/Barillah.png",
   },
 ];

@@ -2,63 +2,145 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- FAVICONS (harus dari /public) -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0B0B0C" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BYU DIGITAL | We design, build, and grow digital that performs.</title>
+
+    <title>
+      BYU DIGITAL — We design, build, and grow digital that performs.
+    </title>
+    <meta
+      name="description"
+      content="BYU DIGITAL is a product & brand studio. We design, build, and grow high-performing websites, apps, and digital experiences for ambitious teams."
+    />
+    <link rel="canonical" href="https://YOUR_DOMAIN/" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+
+    <!-- Open Graph (Facebook/LinkedIn/WA) -->
+    <meta
+      property="og:title"
+      content="BYU DIGITAL — We design, build, and grow digital that performs."
+    />
+    <meta
+      property="og:description"
+      content="We design, build, and grow high-performing websites, apps, and digital experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://YOUR_DOMAIN/" />
+    <meta property="og:site_name" content="BYU DIGITAL" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Gunakan URL absolut yang publik -->
+    <meta property="og:image" content="https://YOUR_DOMAIN/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BYU DIGITAL — design, build, grow" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="BYU DIGITAL — We design, build, and grow digital that performs."
+    />
+    <meta
+      name="twitter:description"
+      content="We design, build, and grow high-performing websites, apps, and digital experiences."
+    />
+    <meta name="twitter:image" content="https://YOUR_DOMAIN/og-image.jpg" />
+    <!-- opsional: isi @handle kalau ada -->
+    <!-- <meta name="twitter:site" content="@byudigital" /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Sora', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
+              display: ["Sora", "sans-serif"],
             },
             colors: {
-              brand: {
-                DEFAULT: '#FEBD19',
-                dark: '#E4A916'
-              },
-              ink: '#0B0B0C',
-              light: {
-                100: '#FFFFFF',
-                200: '#F3F4F6',
-                300: '#E5E7EB'
-              },
-              dark: {
-                100: '#6B7280',
-                200: '#374151',
-                300: '#111827'
-              }
+              brand: { DEFAULT: "#FEBD19", dark: "#E4A916" },
+              ink: "#0B0B0C",
+              light: { 100: "#FFFFFF", 200: "#F3F4F6", 300: "#E5E7EB" },
+              dark: { 100: "#6B7280", 200: "#374151", 300: "#111827" },
             },
-            borderRadius: {
-              'xl': '1rem',
-              '2xl': '1.5rem',
-            },
-            boxShadow: {
-              'soft': '0 8px 30px rgba(0,0,0,0.06)',
-            }
-          }
+            borderRadius: { xl: "1rem", "2xl": "1.5rem" },
+            boxShadow: { soft: "0 8px 30px rgba(0,0,0,0.06)" },
+          },
+        },
+      };
+    </script>
+
+    <!-- (Opsional) Preload hero image atau OG -->
+    <!-- <link rel="preload" as="image" href="/og-image.jpg" /> -->
+
+    <!-- React via importmap (punyamu) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.1.1",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+          "react/": "https://aistudiocdn.com/react@^19.1.1/",
+          "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2"
         }
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+
+    <link rel="stylesheet" href="/index.css" />
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BYU DIGITAL",
+        "url": "https://YOUR_DOMAIN/",
+        "logo": "https://YOUR_DOMAIN/logo.png",
+        "description": "We design, build, and grow high-performing digital products.",
+        "sameAs": [
+          "https://www.linkedin.com/company/YOUR_HANDLE",
+          "https://twitter.com/YOUR_HANDLE",
+          "https://www.instagram.com/YOUR_HANDLE"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BYU DIGITAL",
+        "url": "https://YOUR_DOMAIN/"
+        /* Jika ada fitur search internal, aktifkan:
+        ,"potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://YOUR_DOMAIN/search?q={query}",
+          "query-input": "required name=query"
+        }
+        */
+      }
+    </script>
+  </head>
+
   <body class="bg-dark-300 text-light-200 antialiased">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
