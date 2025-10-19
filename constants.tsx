@@ -153,42 +153,42 @@ export const CASE_STUDIES_DATA: CaseStudy[] = [
 export const CLIENTS_GRID_DATA: Client[] = [
   {
     name: "Tiket.com",
-    logoUrl: "/src/asset/clients/tiket_com.png",
+    logoUrl: "/public/asset/clients/Tiket.png",
   },
   {
     name: "Pantai Kelapa",
-    logoUrl: "/src/asset/clients/Pantai_Kelapa.png",
+    logoUrl: "/public/asset/clients/Pantai_Kelapa.png",
   },
   {
     name: "Pemkab Tuban",
-    logoUrl: "/src/asset/clients/Pemkab_Tuban.png",
+    logoUrl: "/public/asset/clients/Pemkab_Tuban.png",
   },
   {
     name: "Begawan Apartment",
-    logoUrl: "/src/asset/clients/Begawan_Apart.png",
+    logoUrl: "/public/asset/clients/Begawan_Apart.png",
   },
   {
     name: "Seafood Pantai Kelapa",
-    logoUrl: "/src/asset/clients/SeafoodPantaiKelapa.png",
+    logoUrl: "/public/asset/clients/SeafoodPantaiKelapa.png",
   },
   {
     name: "Lazizaa",
-    logoUrl: "/src/asset/clients/Lazizaa.png",
+    logoUrl: "/public/asset/clients/Lazizaa.png",
   },
   {
     name: "Gunung Tetap Abadi",
-    logoUrl: "/src/asset/clients/Gunung_Tetap_Abadi.png",
+    logoUrl: "/public/asset/clients/Gunung_Tetap_Abadi.png",
   },
   {
     name: "Bank Jatim Syariah",
-    logoUrl: "/src/asset/clients/Bank_Jatim.png",
+    logoUrl: "/public/asset/clients/Bank_Jatim.png",
   },
   {
     name: "Traveloka",
-    logoUrl: "/src/asset/clients/traveloka.png",
+    logoUrl: "/public/asset/clients/traveloka.png",
   },
   {
     name: "Barillah",
-    logoUrl: "/src/asset/clients/Barillah.png",
+    logoUrl: "/public/asset/clients/Barillah.png",
   },
 ];
